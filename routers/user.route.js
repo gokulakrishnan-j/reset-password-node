@@ -117,7 +117,7 @@ Router.post('/forgottenpassword',async function (request,response){
         from: 'Rest-password',
         to: email,
         subject: 'Change password',
-        text: `http://localhost:3000/forgottenpassword/${getUserFromDB.email}`
+        text: `https://sensational-blancmange-440903.netlify.app/forgottenpassword/${getUserFromDB.email}`
       };
       
       transporter.sendMail(mailOptions);
